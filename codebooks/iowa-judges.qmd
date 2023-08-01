@@ -1,0 +1,73 @@
+---
+title: "iowa-judges.csv"
+format:
+  html:
+    theme: 
+      - lumen
+    css: ["../assets/codebooks.css"]
+    code-copy: true
+    code-fold: true
+    highlight-style: zenburn
+    df-print: paged
+    linkcolor: '#ff851b'
+date: "07-28-2022"
+bibliography: '../assets/data.bib'
+csl: '../assets/apa-single-spaced.csl'
+---
+
+
+```{r}
+#| echo: false
+source("../assets/codebook-setup.R")
+```
+
+---
+
+The Iowa State Bar Association has conducted the Judicial Performance Review as a way of giving voters information on the Iowa judges up for retention in an election year. Judges are evaluated on their professional competence and demeanor as determined by the attorneys who frequently appeared before them. The attorneys also indicate whether or not they believe the judge should be retained. The data in [iowa-judges.csv](https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/iowa-judges.csv) were published by the @The-Iowa-State-Bar-Association:2018. The variables are:
+
+- `year`: Year of the judicial performance review
+- `judge`: Name of the judge
+- `district`: Judicial district
+- `respondents`: Number of attorneys who rated the judge
+- `retention`: Percentage of attorneys who indicated the judge should be retained
+
+The following characteristics were rated on the scale: 5 (Excellent; performance is outstanding), 4 (Good; performance is above average), 3 (Satisfactory; performance is adequate), 2 (Deficient; performance is below average), 1 (Very Poor; performance is well below average and unacceptable).
+
+- `knowledge`: Knowledge and application of the law
+- `perception`: Perception of factual issues
+- `punctuality`: Punctuality for court proceedings
+- `attention`: Attentiveness to evidence and arguments
+- `management`: Management and control of the courtroom
+- `demeanor`: Temperament and demeanor 
+- `clarity`: Clarity and quality of written opinions
+- `promptness`: Promptness of rulings and decisions
+
+The following characteristics were rated on the scale: 5 (Strongly Agree), 4 (Agree), 3 (Neither), 2 (Disagree), 1 (Strongly Disagree)
+
+- `criticism`: Avoids undue personal observations or criticisms of litigants, judges and lawyers from bench or in written opinions
+- `decision`: Decides cases on basis of applicable law and fact, not affected by outside influence.
+- `courteous`: Is courteous and patient with litigants, lawyers and court personnel.
+- `equality`: Treats people equally regardless of race, gender, age, national origin, religion, sexual orientation, socio-economic status or disability.
+
+<br />
+
+
+### Preview
+
+```{r}
+#| echo: true
+
+# Import data
+judges = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/iowa-judges.csv")
+
+# View data
+judges
+```
+
+<br />
+
+
+### References
+
+
+

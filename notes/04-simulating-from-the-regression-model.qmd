@@ -1,0 +1,52 @@
+---
+title: "`r paste(emo::ji('memo'), 'Simulating from the Regression Model')`"
+format:
+  html:
+   css: "../assets/styles.css"
+date: 08-05-2022
+---
+
+
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Here are links to several script files and handouts that we will use in class.
+
+<br />
+
+### Generating Data
+
+- [Generating Random Data from a Regression Model](../scripts/03-generate-random-data.R) is a script file that provides syntax for generating data from a given population regression model.
+
+<br />
+
+
+### Simulation 1: Simulating from a Regression Model
+
+- [Simulating from a Regression Model](../scripts/04-simulating-from-the-regression-model.R) is a script file that provides syntax for carrying out a simulation to produce distributions of estimates from a regression model.
+- [Vizualization of Simulating from a Regression Model](../files/thought-experiment-01.pdf) is a handout visualizing the simulation process for generating data from a given population regression model.
+
+<br />
+
+
+### Simulation 2: Simulating from a Null Regression Model
+
+- [Simulating from a Null Regression Model](../scripts/05-simulating-from-the-null-regression-model.R) is a script file that provides syntax for carrying out a simulation to produce distributions of estimates assuming certain parameters in the regression model are zero.
+- [Vizualization of Simulating from a Null Regression Model](../files/thought-experiment-02.pdf) is a handout visualizing the simulation process for generating data to produce distributions of estimates assuming certain parameters in the regression model are zero.
+
+<br />
+
+
+### Resources
+
+Here are several resources to help your understanding of simulation. The chapters from *Monte Carlo Simulation and Resampling Methods for Social Science* should be accessible via the links after logging in with your x500 and password. 
+
+- [Probability](https://dx-doi-org.ezp2.lib.umn.edu/10.4135/9781483319605.n2): Common probability distributions and how to compute with them.
+- [Random Number Generation](https://dx-doi-org.ezp2.lib.umn.edu/10.4135/9781483319605.n4): Learn how to draw random numbers from different distributions. Also information about repeating processes in R, including writing your own functions, using for loops, and using if-else functions.
+
+
+
+

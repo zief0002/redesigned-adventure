@@ -1,0 +1,60 @@
+---
+title: "states-2019.csv"
+format:
+  html:
+    theme: 
+      - lumen
+    css: ["../assets/codebooks.css"]
+    code-copy: true
+    code-fold: true
+    highlight-style: zenburn
+    df-print: paged
+    linkcolor: '#ff851b'
+date: "07-28-2022"
+bibliography: '../assets/data.bib'
+csl: '../assets/apa-single-spaced.csl'
+---
+
+
+```{r}
+#| echo: false
+source("../assets/codebook-setup.R")
+```
+
+---
+
+The data in [states-2019.csv](https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/states-2019.csv) include statistics collected from Wikipedia, the 2019 American Community Survey, and the National Centers for Environmental Information. The attributes in the data are:
+
+- `state`: State/territory name
+- `life_expectancy`: Life expectancy (in years)
+- `population`: Population estimate (in millions)
+- `income`: Per capita income (in thousands of dollars)
+- `illiteracy`: Illiteracy rate (in percent)
+- `murder`: Murder and non-negligent manslaughter rate (per 100,000 population)
+- `hs_grad`: Percentage of high school graduates
+- `frost`: Mean number of days with minimum temperature below freezing
+- `area`: Land area (in square miles)
+
+<br />
+
+
+### Preview
+
+```{r}
+#| echo: true
+
+# Import data
+usa = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/states-2019.csv")
+
+# View data
+usa
+```
+
+<br />
+
+
+### References
+
+
+
+

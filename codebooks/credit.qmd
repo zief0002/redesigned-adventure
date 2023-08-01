@@ -1,0 +1,54 @@
+---
+title: "credit.csv"
+format:
+  html:
+    theme: 
+      - lumen
+    css: ["../assets/codebooks.css"]
+    code-copy: true
+    code-fold: true
+    highlight-style: zenburn
+    df-print: paged
+    linkcolor: '#ff851b'
+date: "07-28-2022"
+bibliography: '../assets/data.bib'
+csl: '../assets/apa-single-spaced.csl'
+---
+
+
+```{r}
+#| echo: false
+source("../assets/codebook-setup.R")
+```
+
+---
+
+The data in [credit.csv](https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/credit.csv) contains simulated credit card data for 400 individuals. These data are from @James:2013. The variables in the data set are:
+
+- `balance`: Customer's average credit card balance (in dollars)
+- `income`: Customer's reported income (in \$10,000 dollars)
+- `limit`: Credit limit issued to customer
+- `rating`: Customer's credit rating; higher values indicate a better credit rating
+- `cards`: Number of credit cards the customer has
+- `age`: Customer's age
+- `education`: Number of years of education
+
+<br />
+
+
+### Preview
+
+```{r}
+#| echo: true
+
+# Import data
+credit = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/credit.csv")
+
+# View data
+credit
+```
+
+<br />
+
+
+### References

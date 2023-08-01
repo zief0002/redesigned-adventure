@@ -1,0 +1,277 @@
+---
+title: "Assignment 01"
+author: "Matrix Algebra for Linear Regression"
+header-includes:
+   - \usepackage{xcolor}
+   - \usepackage{mathtools}
+   - \usepackage{tikz}
+   - \usepackage{tkz-euclide}
+   - \definecolor{umn}{RGB}{153, 0, 85}
+   - \definecolor{umn2}{rgb}{0.1843137, 0.4509804, 0.5372549}
+output: 
+  pdf_document:
+    highlight: tango
+urlcolor: "umn2"
+---
+
+
+This assignment is worth 20 points. 
+
+
+
+
+
+```{r echo=FALSE}
+d = data.frame(
+  country = c("Algeria", "Bolivia", "Burundi", "Dominican Republic", "Kenya", "Malawi", 
+              "Nicaragua", "Paraguay", "Rwanda", "Trinidad & Tobago"),
+  infant = c( 86.3, 60.4, 150.0, 48.8, 55.0, 148.3, 46.0, 38.6, 132.9, 26.2),
+  pci = c(400, 200, 68, 406, 169, 130, 507, 347, 61, 732),
+  region = c("Africa", "Americas", "Africa", "Americas", "Africa", "Africa", "Americas", "Americas", "Africa", "Americas")
+)
+
+X = matrix(
+  data = c(rep(1, 10),
+           400, 200, 68, 406, 169, 130, 507, 347, 61, 732, 
+             1,   0,  1,   0,   1,   1,   0,   0,  1,   0, 
+           400,   0, 68,   0, 169, 130,   0,   0, 61,   0),
+  ncol = 4
+)
+
+y = c( 86.3, 60.4, 150.0, 48.8, 55.0, 148.3, 46.0, 38.6, 132.9, 26.2)
+
+
+array_to_LaTeX <- function(arr){
+  rows <- apply(arr, MARGIN=1, paste, collapse = " & ")
+  matrix_string <- paste(rows, collapse = " \\\\ ")
+  return(paste("$$\\begin{bmatrix}", matrix_string, "\\end{bmatrix}$$"))
+}
+#knitr::kable(x)
+
+# library(xtable)
+# xt_x = xtable( t(X) %*% X )
+# 
+# print(xt_x, floating=FALSE, tabular.environment="bmatrix", hline.after=NULL, include.rownames=FALSE, include.colnames=FALSE)
+#cat(array_to_LaTeX(t(X) %*% X))
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE)
+```
+
+
+## Unstandardized Regression
+
+**1. Write out the elements of the matrix $\mathbf{X}^{\intercal}\mathbf{X}$, where $\mathbf{X}$ is the design matrix.**
+
+```{r }
+t(X) %*% X
+```
+
+\vspace{2em}
+
+**2. Does $\mathbf{X}^{\intercal}\mathbf{X}$ have an inverse? Explain.**
+
+```{r}
+det(t(X) %*% X)
+```
+
+Yes. Since $\mathrm{det}(\mathbf{X}^{\intercal}\mathbf{X})\neq0$, then $\mathbf{X}^{\intercal}\mathbf{X}$ has an inverse.
+
+
+\vspace{2em}
+
+**3. Compute (using matrix algebra) and report the vector of coefficients, b for the OLS regression.**
+
+```{r}
+b = solve(t(X) %*% X) %*% t(X) %*% y
+b
+```
+
+\newpage
+
+**4.  Compute (using matrix algebra) and report the variance--covariance matrix of the coefficients.**
+
+```{r}
+y_hat = X %*% b
+e = y - y_hat
+mse = (t(e) %*% e) / (10 - 3 - 1)
+var_cov_b = as.numeric(mse) * solve(t(X) %*% X)
+var_cov_b
+```
+
+\vspace{2em}
+
+**5. Use the values from b (Question 3) and from the variance--covariance matrix you reported in the previous question to find the 95% CI for the coefficient associated with the main-effect of PCI. (Hint: If you need to refresh yourself on how CIs are computed, see [here](https://zief0002.github.io/epsy-8252/misc/s21-05-probability-distributions-in-regression.html).)**
+
+```{r}
+moe = qt(.975, df = 6) * sqrt(var_cov_b[2, 2]) 
+b[2] + c(-moe, moe)
+```
+
+\vspace{2em}
+
+**6. Compute (using matrix algebra) and report the hat-matrix, H. Also show how you would use the values in the hat-matrix to find $\hat{y}_1$ (the predicted value for Algeria).**
+
+```{r}
+# Compute hat-matrix
+H = X %*% solve(t(X) %*% X) %*% t(X)
+H
+
+# Compute predicted value for Algeria
+yhat = H %*% y
+yhat[1]
+```
+
+\vspace{2em}
+
+**7. Compute (using matrix algebra) and report the vector of residuals, e.**
+
+```{r}
+I = diag(10)
+e = (I - H) %*% y
+e
+```
+
+
+\vspace{2em}
+
+**8. Compute (using matrix algebra) and report the estimated value for the RMSE.**
+
+```{r}
+rmse = sqrt((t(e) %*% e) / (10 - 3 - 1))
+rmse
+```
+
+
+
+\newpage
+
+**9. Given the assumptions of the OLS model and the RMSE estimate you computed in the previous question, compute and report the variance--covariance matrix of the residuals.**
+
+
+```{r}
+as.numeric(rmse)^2 * diag(10)
+```
+
+# ANOVA Decomposition
+
+**10. Compute (using matrix algebra) and report the model, residual, and total sum of squares terms in the ANOVA decomposition table. (2pts)**
+
+
+```{r}
+# Total
+ss_total = t(y - mean(y)) %*% (y - mean(y))
+ss_total
+
+# Model
+ss_model = t(yhat - mean(y)) %*% (yhat - mean(y))
+ss_model
+
+# Residual
+ss_residual = t(e) %*% e
+ss_residual
+```
+
+\vspace{2em}
+
+**11. Compute (using matrix algebra) and report the model, residual, and total degrees of freedom terms in the ANOVA decomposition table. (2pts)**
+
+```{r}
+# Total
+df_total = length(y) - 1
+df_total
+
+# Model
+df_model = sum(diag(H)) - 1
+df_model
+
+# Residual
+df_residual = df_total - df_model
+df_residual
+```
+
+\vspace{2em}
+
+**12. Use the values you obtained in Questions 11 and 12 to compute the model and residual mean square terms.**
+
+```{r}
+# Model
+ms_model = ss_model / df_model
+ms_model
+
+# Residual
+ms_residual = ss_residual / df_residual
+ms_residual
+```
+
+\newpage
+
+**13. Use the mean square terms you found in Question 13 to compute the *F*-value for the model (i.e., to test $H_0:\rho^2=0$). Also compute the *p*-value associated with this *F*-value. (Hint: If you need to refresh yourself on how *F*-values or *p*-values are computed, see [here](https://zief0002.github.io/epsy-8252/misc/s21-05-probability-distributions-in-regression.html).)**
+
+```{r}
+# Compute F-statistic
+f_obs = ms_model / ms_residual
+f_obs
+
+# Compute p-value
+p = 1 - pf(f_obs, df1 = df_model, df2 = df_residual)
+p
+```
+
+
+
+# Regression: Effects-Coding
+
+
+```{r echo=FALSE}
+X = matrix(
+  data = c(rep(1, 10),
+           1,   -1,  1,   -1,   1,   1,   -1,   -1,  1,   -1
+           ),
+  ncol = 2
+)
+
+```
+
+**14. Write out the design matrix that would be used to fit the model. **
+
+```{r echo=FALSE}
+X
+```
+
+
+\vspace{2em}
+
+**15. Compute (using matrix algebra) and report the vector of coefficients, b, from the OLS regression.**
+
+```{r}
+b = solve(t(X) %*% X) %*% t(X) %*% y
+b
+```
+
+
+\newpage
+
+**16. Compute (using matrix algebra) and report the variance--covariance matrix for the coefficients.**
+
+```{r}
+y_hat = X %*% b
+e = y - y_hat
+mse = (t(e) %*% e) / (10 - 1 - 1)
+
+# Compute variance-covariance matrix
+as.numeric(mse) * solve(t(X) %*% X)
+```
+
+\vspace{2em}
+
+**17. Explain why the sampling variances for the coefficients are the same and why the sampling covariance is zero by referring to computations produced in the matrix algebra. (2pts)**
+
+The reason is the computation of the inverse of $\mathbf{X}^{\intercal}\mathbf{X}$. This produces a $2\times 2$ diagonal matrix that has 0.1 on the main diagonal and zeros on the off-diagonal. Since the diagonal elements are the same, the sampling variances will be equal; since the off-diagonal elements are zero, the covariance will also be zero.
+
+```{r}
+solve(t(X) %*% X)
+```
+

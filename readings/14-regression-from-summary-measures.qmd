@@ -1,0 +1,17 @@
+---
+title: "`r paste(emo::ji('book'), 'Regression from Summary Measures')`"
+format:
+  html:
+   css: "../assets/styles.css"
+date: 08-05-2022
+---
+
+
+Read the following chapter:
+
+- Rodriguez, M., &amp; Zieffler, A. (2021). [Statistical application: SSCP, variance–covariance, and correlation matrices.](https://zief0002.github.io/matrix-algebra/statistical-application-sscp-variancecovariance-and-correlation-matrices.html). *Matrix Algebra for Educational Scientists.* 
+
+
+In particular pay attention to the relationships between these three matrices.
+
+
