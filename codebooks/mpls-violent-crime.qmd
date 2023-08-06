@@ -10,7 +10,7 @@ format:
     highlight-style: zenburn
     df-print: paged
     linkcolor: '#ff851b'
-date: "07-28-2022"
+date: "08-02-2023"
 bibliography: '../assets/data.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
@@ -24,7 +24,7 @@ source("../assets/codebook-setup.R")
 ---
 
 
-The [mpls-violent-crime.csv](https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/mpls-violent-crime.csv) file contains data collected from the Minneapolis Police Department and reported by the [Star Tribune](http://www.startribune.com/a-deeper-look-at-minneapolis-crime-rates/493163741/) on  The two attributes in this file are:
+The [mpls-violent-crime.csv](https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/mpls-violent-crime.csv) file contains data collected from the Minneapolis Police Department and reported by the [Star Tribune](http://www.startribune.com/a-deeper-look-at-minneapolis-crime-rates/493163741/) on  The two attributes in this file are:
 
 - `year`: Year
 - `crime_rate`: Violent crime rate per 100,000 people
@@ -39,7 +39,7 @@ The [mpls-violent-crime.csv](https://raw.githubusercontent.com/zief0002/pensive-
 #| echo: true
 
 # Import data
-crime = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/mpls-violent-crime.csv")
+crime = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/mpls-violent-crime.csv")
 
 # View data
 crime

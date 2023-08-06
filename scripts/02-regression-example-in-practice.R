@@ -4,7 +4,7 @@ library(ggExtra)
 library(broom)
 
 # Import data
-contraception = read_csv("https://github.com/zief0002/epsy-8264/raw/master/data/contraception.csv")
+contraception = read_csv("https://github.com/zief0002/redesigned-adventure/raw/main/data/contraception.csv")
 
 # View data
 contraception

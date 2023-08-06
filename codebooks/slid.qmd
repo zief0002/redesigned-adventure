@@ -10,7 +10,7 @@ format:
     highlight-style: zenburn
     df-print: paged
     linkcolor: '#ff851b'
-date: "07-28-2022"
+date: "08-02-2023"
 bibliography: '../assets/data.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
@@ -23,7 +23,7 @@ source("../assets/codebook-setup.R")
 
 ---
 
-The data in [slid.csv](https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/slid.csv) includes a subset of data collected during the 1994 wave of Statistics Canada's *Survey of Labour and Income Dynamics* (SLID). These data constitute employed citizens living in Ontario, Canada between the ages of 16 and 65. These data are taken from the public-use dataset made available by Statistics Canada, and prepared by the Institute for Social Research, York University. They were made available in @fox:2022. The variables in the data set are:
+The data in [slid.csv](https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/slid.csv) includes a subset of data collected during the 1994 wave of Statistics Canada's *Survey of Labour and Income Dynamics* (SLID). These data constitute employed citizens living in Ontario, Canada between the ages of 16 and 65. These data are taken from the public-use dataset that was made available by Statistics Canada, and prepared by the Institute for Social Research, York University. They were made available in @fox:2022. The variables in the data set are:
 
 - `wages`: Composite hourly wage rate based on all the participant's jobs
 - `age`: Age of the participant (in years)
@@ -39,7 +39,7 @@ The data in [slid.csv](https://raw.githubusercontent.com/zief0002/pensive-giraff
 #| echo: true
 
 # Import data
-slid = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/slid.csv")
+slid = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/slid.csv")
 
 # View data
 slid

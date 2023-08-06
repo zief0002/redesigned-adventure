@@ -1,5 +1,6 @@
 ## Load libraries
 library(knitr)
+library(kableExtra)
 library(rmdformats)
 
 ## Global options

@@ -10,7 +10,7 @@ format:
     highlight-style: zenburn
     df-print: paged
     linkcolor: '#ff851b'
-date: "07-28-2022"
+date: "08-02-2023"
 bibliography: '../assets/data.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
@@ -23,7 +23,7 @@ source("../assets/codebook-setup.R")
 
 ---
 
-The data in [contraception.csv](https://github.com/zief0002/epsy-8264/raw/master/data/contraception.csv) were collected from several sources (e.g., World Bank). The variables are:
+The data in [contraception.csv](https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/contraception.csv) were collected from several sources (e.g., World Bank). The variables are:
 
 - `country`: Country name
 - `region`: Region of the world
@@ -40,7 +40,7 @@ The data in [contraception.csv](https://github.com/zief0002/epsy-8264/raw/master
 #| echo: true
 
 # Import data
-contraception = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/contraception.csv")
+contraception = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/contraception.csv")
 
 # View data
 contraception

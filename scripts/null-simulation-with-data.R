@@ -5,7 +5,7 @@ library(tidyverse)
 
 
 ### Import Data
-keith2 = read_csv(file = "~/Desktop/keith2.csv")
+keith2 = read_csv(file = "https://github.com/zief0002/redesigned-adventure/raw/main/data/keith2.csv")
 keith2
 
 

@@ -10,7 +10,7 @@ format:
     highlight-style: zenburn
     df-print: paged
     linkcolor: '#ff851b'
-date: "07-28-2022"
+date: "08-02-2023"
 bibliography: '../assets/data.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
@@ -23,7 +23,7 @@ source("../assets/codebook-setup.R")
 
 ---
 
-The data in [credit.csv](https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/credit.csv) contains simulated credit card data for 400 individuals. These data are from @James:2013. The variables in the data set are:
+The data in [credit.csv](https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/credit.csv) contains simulated credit card data for 400 individuals. These data are from @James:2013. The variables in the data set are:
 
 - `balance`: Customer's average credit card balance (in dollars)
 - `income`: Customer's reported income (in \$10,000 dollars)
@@ -42,7 +42,7 @@ The data in [credit.csv](https://raw.githubusercontent.com/zief0002/pensive-gira
 #| echo: true
 
 # Import data
-credit = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/credit.csv")
+credit = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/credit.csv")
 
 # View data
 credit

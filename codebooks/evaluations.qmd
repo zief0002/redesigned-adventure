@@ -10,7 +10,7 @@ format:
     highlight-style: zenburn
     df-print: paged
     linkcolor: '#ff851b'
-date: "07-28-2022"
+date: "08-02-2023"
 bibliography: '../assets/data.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
@@ -23,7 +23,7 @@ source("../assets/codebook-setup.R")
 
 ---
 
-The data in [evaluations.csv](https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/evaluations.csv) come from @Hamermesh:2005 and were made available by @Gelman:2007. This data were collected from student evaluations of instructors' beauty and teaching quality for several courses at the University of Texas. The teaching evaluations were conducted at the end of the semester, and the beauty judgments were made later, by six students who had not attended the classes and were not aware of the course evaluations. The variables are:
+The data in [evaluations.csv](https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/evaluations.csv) come from @Hamermesh:2005 and were made available by @Gelman:2007. This data were collected from student evaluations of instructors' beauty and teaching quality for several courses at the University of Texas. The teaching evaluations were conducted at the end of the semester, and the beauty judgments were made later, by six students who had not attended the classes and were not aware of the course evaluations. The variables are:
 
 - `prof_id`: Professor ID number
 - `avg_eval`: Average course rating
@@ -45,7 +45,7 @@ The data in [evaluations.csv](https://raw.githubusercontent.com/zief0002/pensive
 #| echo: true
 
 # Import data
-evaluations = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/evaluations.csv")
+evaluations = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/evaluations.csv")
 
 # View data
 evaluations

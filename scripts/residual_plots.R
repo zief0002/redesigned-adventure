@@ -13,6 +13,7 @@ residual_plots = function(object){
   # Create residual plot
   p2 = ggplot(data = aug_lm, aes(x =.fitted, y = .resid)) +
     geom_hline(yintercept = 0, linetype = "dashed") +
+    geom_smooth(method = "lm", se = TRUE) +
     geom_point() +
     geom_smooth(method = "loess", se = TRUE) +
     theme_light() +

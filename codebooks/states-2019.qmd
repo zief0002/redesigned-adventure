@@ -10,7 +10,7 @@ format:
     highlight-style: zenburn
     df-print: paged
     linkcolor: '#ff851b'
-date: "07-28-2022"
+date: "08-02-2023"
 bibliography: '../assets/data.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
@@ -23,7 +23,7 @@ source("../assets/codebook-setup.R")
 
 ---
 
-The data in [states-2019.csv](https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/states-2019.csv) include statistics collected from Wikipedia, the 2019 American Community Survey, and the National Centers for Environmental Information. The attributes in the data are:
+The data in [states-2019.csv](https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/states-2019.csv) include statistics collected from Wikipedia, the 2019 American Community Survey, and the National Centers for Environmental Information. The attributes in the data are:
 
 - `state`: State/territory name
 - `life_expectancy`: Life expectancy (in years)
@@ -44,7 +44,7 @@ The data in [states-2019.csv](https://raw.githubusercontent.com/zief0002/pensive
 #| echo: true
 
 # Import data
-usa = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/states-2019.csv")
+usa = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/states-2019.csv")
 
 # View data
 usa

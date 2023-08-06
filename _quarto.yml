@@ -3,13 +3,17 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "notes/"
     - "data/"
     - "files/"
     - "handouts/"
     - "scripts/"
 
+execute:
+    freeze: auto
+    
 website:
-  title: "EPsy 8251"
+  title: "EPsy 8264"
   navbar:
     background: "#ADCAD6"
     search: true

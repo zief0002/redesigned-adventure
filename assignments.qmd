@@ -21,96 +21,71 @@ Below are the due dates for the assignments, as well as links to each assignment
 <tbody>
 
 <tr>
-<td>Assignment \#1: *Introduction to Statistical Computing* 
-  <!-- <span style="margin-left:20px; color:red;">*[Updated 09-13-2021]*</span> -->
+<td>Assignment 01: *Matrix Algebra for Linear Regression* 
+  <!-- <span style="margin-left:20px; color:red;">*[Updated 09-09-2019]*</span> -->
 </td>
-<!-- <td>Sept. 19</td> -->
-<td>Sept. 27</td>
+<td>Sept. 26</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-01-introduction-to-statistical-computing.html)
-</td>
-</tr>
-
-
-
-<tr>
-<td>Assignment \#2: *Simple Regression: Description*</td>
-<!-- <td>Oct. 01</td> -->
-<td>Oct. 09</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-02-simple-regression-description.html)
+  <a class = "my-link" href="assignments/assignment-01.html"><span class="fas fa-link"></span></a>
 </td>
 </tr>
 
 <tr>
-<td>Assignment \#3: *Correlation and Standardized Regression*</td>
-<!-- <td>Oct. 10</td> -->
-<td>Oct. 11</td>
+<td>Assignment 02: *Simulating from the Regression Model*</td>
+<td>Oct. 05</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-03-correlation-and-standardized-regression.html)
+  <a class = "my-link" href="assignments/assignment-02.html"><span class="fas fa-link"></span></a>
 </td>
 </tr>
 
 <tr>
-<td>Assignment \#4: *Simple Regression: Inference*</ td>
-<!-- <span style="margin-left:20px; color:red;">*[Updated 10-11-2023]*</span> -->
-<!-- <td>Oct. 22</td> -->
-<td>Oct. 25</td>
+<td>Assignment 03: *Path Analysis*</td>
+<td>Oct. 13</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-04-simple-regression-inference.html)
+  <a class = "my-link" href="assignments/assignment-03.html"><span class="fas fa-link"></span></a>
 </td>
 </tr>
 
 <tr>
-<td>Assignment \#5: *Introduction to Multiple Regression*</td>
-<!-- <td>Oct. 31</td> -->
-<td>Nov. 08</td>
+<td>Assignment 04: *Regression Diagnostics*</td>
+<td>Oct. 26</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-05-introduction-to-multiple-regression.html)
+  <a class = "my-link" href="assignments/assignment-04.html"><span class="fas fa-link"></span></a>
 </td>
 </tr>
 
 <tr>
-<td>Assignment \#6: *Regression Assumptions*</td>
-<!-- <td>Nov. 12</td> -->
-<td>Nov. 15</td>
+<td>Assignment 05: *Using WLS to Model Data with Outliers*</td>
+<td>Nov. 07</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-06-regression-assumptions.html)
-</td>
+  <a class = "my-link" href="assignments/assignment-05.html"><span class="fas fa-link"></span></a>
 </td>
 </tr>
-
-
 
 <tr>
-<td>Assignment \#7: *Dichotomous Categorical Predictors*</td>
-<!-- <td>Nov. 19</td> -->
-<td>Nov. 29</td>
+<td>Assignment 06: *Collinearity and Dimension Reduction*</td>
+<td>Nov. 21</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-07-dichotomous-categorical-predictors.html)
+  <a class = "my-link" href="assignments/assignment-06.html"><span class="fas fa-link"></span></a>
 </td>
 </tr>
-
 
 <tr>
-<td>Assignment \#8: *Polychotomous Categorical Predictors*
-  <!-- <span style="margin-left:20px; color:red;">*[Updated 11-12-2019]*</span> -->
-  </td>
-<!-- <td>Dec. 03</td> -->
-<td>Dec. 06</td>
+<td>Assignment 07: *Ridge Regression*</td>
+<td>Nov. 30</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-08-polychotomous-categorical-predictors.html)
+  <a class = "my-link" href="assignments/assignment-07.html"><span class="fas fa-link"></span></a>
 </td>
 </tr>
-
 
 <tr>
-<td>Assignment \#9: *Interaction Models*</td>
-<td>Dec. 15 (due at 12:00pm)</td>
+<td>Assignment 08: *Cross-Validation*</td>
+<td>Dec. 15</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-09-interactions.html)
+  <a class = "my-link" href="assignments/assignment-08.html"><span class="fas fa-link"></span></a>
 </td>
 </tr>
+
 
 </tbody>
 </table>
