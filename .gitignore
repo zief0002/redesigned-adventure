@@ -43,4 +43,6 @@
 # R Environment Variables
 .Renviron
 
-
+# Directories
+/admin/
+/answer-keys/

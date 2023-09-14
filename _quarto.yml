@@ -8,6 +8,8 @@ project:
     - "files/"
     - "handouts/"
     - "scripts/"
+    - "!admin/"
+
 
 execute:
     freeze: auto
