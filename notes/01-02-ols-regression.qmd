@@ -13,7 +13,7 @@ Here are links to several PDF handouts:
 - [OLS Estimators and Their Properties](../files/02-ols-estimators-and-their-properties.pdf) is a handout that steps through estimating the OLS regression estimators and also derives some of the properties of those estimators
 - [Assumptions for OLS Regression and the Gauss-Markov Theorem](../files/03-assumptions-and-gauss-markov.pdf) is a handout that examines the assumptions underlying the Gauss-Markov theorem; the theorem showing that the OLS estimators are BLUE.
 - [Statistical Inference for the Regression Model](../files/04-inference-for-the-regression-model.pdf) is a handout working through how we carry out coefficient-level and model-level statistical inference.
-- [A Regression Example in Practice](../handouts/handout-regression-example-in-practice.html) is a handout that walks through using matrix algebra to compute many of the things we are interested in as applied researchers. It also show the equivalent built-in R functions for obtaining this.
+- [A Regression Example in Practice](../files/handout-regression-example-in-practice.html) is a handout that walks through using matrix algebra to compute many of the things we are interested in as applied researchers. It also show the equivalent built-in R functions for obtaining this.
 
 The handouts include more detail than I will cover in class. I will highlight some important ideas from each of them, and you can work through some of the mathematical derivation on your own if it is of interest.
 
