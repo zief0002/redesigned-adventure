@@ -64,7 +64,7 @@ You will be fitting the model `lm(infant ~ 1 + pci + region + pci:region)`. With
 
 4. Compute (using matrix algebra) and report the variance--covariance matrix of the coefficients.
 
-5. Use the values from **b** (Question 3) and from the variance--covariance matrix you reported in the previous question to find the 95% CI for the coefficient associated with the main-effect of PCI. (Hint: If you need to refresh yourself on how CIs are computed, see [here](https://zief0002.github.io/epsy-8252/notes/s22-05-probability-distributions-in-regression).)
+5. Use the values from **b** (Question 3) and from the variance--covariance matrix you reported in the previous question to find the 95% CI for the coefficient associated with the main-effect of PCI. (Hint: If you need to refresh yourself on how CIs are computed, see [here](https://zief0002.github.io/gentrified-ladybug/notes/s22-05-probability-distributions-in-regression.html).)
 
 6. Compute (using matrix algebra) and report the hat-matrix, **H**. Also show how you would use the values in the hat-matrix to find $\hat{y}_1$ (the predicted value for Algeria).
 
@@ -88,7 +88,7 @@ In this section you will be re-creating the output from the ANOVA decomposition 
 
 12. Use the values you obtained in Questions 11 and 12 to compute the model and residual mean square terms.
 
-13. Use the mean square terms you found in Question 13 to compute the *F*-value for the model (i.e., to test $H_0:\rho^2=0$). Also compute the *p*-value associated with this *F*-value. (Hint: If you need to refresh yourself on how *F*-values or *p*-values are computed, see [here](https://zief0002.github.io/epsy-8252/notes/s22-05-probability-distributions-in-regression).)
+13. Use the mean square terms you found in Question 13 to compute the *F*-value for the model (i.e., to test $H_0:\rho^2=0$). Also compute the *p*-value associated with this *F*-value. (Hint: If you need to refresh yourself on how *F*-values or *p*-values are computed, see [here](https://zief0002.github.io/gentrified-ladybug/notes/s22-05-probability-distributions-in-regression.html).)
 
 <br />
 
