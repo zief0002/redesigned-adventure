@@ -216,7 +216,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>When we have raw data, we can fit a regression model using the <code>lm()</code> function and obtain model- and coefficient-level summaries using the <code>glance()</code> and <code>tidy()</code> functions respectively. However, there are times we might want to compute regression coefficients and standard errors, but are not given the raw data. This is common for example in articles, which often report summaries rather than providing raw data. In this set of notes, we will examine how we can fit a regression model to summaries of the data, rather than to the raw data itself.</p>
 <!-- - [[CSV]](https://raw.githubusercontent.com/zief0002/pensive-giraffe/main/data/states-2019.csv) -->
 <ul>
-<li><a href="https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/scripts/15-regression-from-summary-measures.R">[R Script File]</a>.R)</li>
+<li><a href="https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/scripts/03-01-regression-from-summary-measures.R">[R Script File]</a>.R)</li>
 </ul>
 <p>So long as we have certain statistical information we can compute the regression coefficients and standard errors without having the raw data. To do this, we need the sample size, means, standard deviations, and correlations between variables. For example, consider the following summary table:</p>
 <div class="cell" data-layout-align="center">
