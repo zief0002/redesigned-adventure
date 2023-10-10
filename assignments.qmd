@@ -40,7 +40,7 @@ Below are the due dates for the assignments, as well as links to each assignment
 
 <tr>
 <td>Assignment 03: *Path Analysis*</td>
-<td>Oct. 13</td>
+<td>Oct. 17</td>
 <td align="center" style="vertical-align:middle;">
   <a class = "my-link" href="assignments/assignment-03.html"><span class="fas fa-link"></span></a>
 </td>
