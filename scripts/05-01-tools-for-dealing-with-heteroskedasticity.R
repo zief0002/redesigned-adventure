@@ -53,9 +53,10 @@ ggplot(data = slid, aes(x = male, y = wages)) +
 ### Function to create residual plots
 ##################################################
 
+# Function to create residual plots
 residual_plots = function(object){
   # Get residuals and fitted values
-  aug_lm = broom::augment(object)
+  aug_lm = broom::augment(object, se_fit = TRUE)
   
   # Create residual plot
   p1 = ggplot(data = aug_lm, aes(x =.resid)) +
@@ -68,8 +69,9 @@ residual_plots = function(object){
   # Create residual plot
   p2 = ggplot(data = aug_lm, aes(x =.fitted, y = .resid)) +
     geom_hline(yintercept = 0, linetype = "dashed") +
-    geom_point() +
-    geom_smooth(method = "loess", se = TRUE) +
+    geom_point(alpha = 0.1) +
+    geom_smooth(method = "lm", se = TRUE) +
+    geom_smooth(method = "loess", se = FALSE, n = 50, span = 0.67) +
     theme_light() +
     xlab("Fitted values") +
     ylab("Residuals")
