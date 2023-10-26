@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-08-02">
+
+<title>EPsy 8264 - equal-education-opportunity.csv</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<link href="../site_libs/pagedtable/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable/js/pagedtable.js"></script>
+<script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../assets/sticky-notes.css">
+<link rel="stylesheet" href="../assets/codebooks.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">EPsy 8264</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html" rel="" target="">
+ <span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../assignments.html" rel="" target="">
+ <span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../data.html" rel="" target="">
+ <span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">Instructor &amp; TA</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../mission-statements.html" rel="" target="">
+ <span class="menu-text">Mission Statements</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../umn-policies.html" rel="" target="">
+ <span class="menu-text">University Policies</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preview" id="toc-preview" class="nav-link active" data-scroll-target="#preview">Preview</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">equal-education-opportunity.csv</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 2, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<hr>
+<p>In 1964, the US Congress passed the Civil Rights Act and also ordered a survey of school districts to evaluate the availability of equal educational opportunity in public education. The results of this survey were reported on in <span class="citation" data-cites="Coleman:1966">Coleman et al. (<a href="#ref-Coleman:1966" role="doc-biblioref">1966</a>)</span> and <span class="citation" data-cites="Mosteller:1972">Mosteller &amp; Moynihan (<a href="#ref-Mosteller:1972" role="doc-biblioref">1972</a>)</span>. The data in <a href="https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/equal-education-opportunity.csv">equal-education-opportunity.csv</a> are a subset of the data collected. These data, provided by <span class="citation" data-cites="Chatterjee:2012">Chatterjee &amp; Hadi (<a href="#ref-Chatterjee:2012" role="doc-biblioref">2012</a>)</span>, constitute a random sample of 70 schools from the original data. The attributes, which have all been mean-centered and standardized, include:</p>
+<ul>
+<li><code>achievement</code>: Measurement indicating the student achievement level</li>
+<li><code>faculty</code>: Measurement indicating the faculty’s credentials</li>
+<li><code>peer</code>: Measurement indicating the influence of peer groups in the school</li>
+<li><code>school</code>: Measurement indicating the school facilities (e.g., building, teaching materials)</li>
+</ul>
+<p><br></p>
+<section id="preview" class="level3">
+<h3 class="anchored" data-anchor-id="preview">Preview</h3>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>eeo <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/equal-education-opportunity.csv"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View data</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>eeo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["achievement"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["faculty"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["peer"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["school"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"-0.43148","2":"0.60814","3":"0.03509","4":"0.16607"},{"1":"0.79969","2":"0.79369","3":"0.47924","4":"0.53356"},{"1":"-0.92467","2":"-0.82630","3":"-0.61951","4":"-0.78635"},{"1":"-2.19081","2":"-1.25310","3":"-1.21675","4":"-1.04076"},{"1":"-2.84818","2":"0.17399","3":"-0.18517","4":"0.14229"},{"1":"-0.66233","2":"0.20246","3":"0.12764","4":"0.27311"},{"1":"2.63674","2":"0.24184","3":"-0.09022","4":"0.04967"},{"1":"2.35847","2":"0.59421","3":"0.21750","4":"0.51876"},{"1":"-0.91305","2":"-0.61561","3":"-0.48971","4":"-0.63219"},{"1":"0.59445","2":"0.99391","3":"0.62228","4":"0.93368"},{"1":"1.21073","2":"1.21721","3":"1.00627","4":"1.17381"},{"1":"1.87164","2":"0.41436","3":"0.71103","4":"0.58978"},{"1":"-0.10178","2":"0.83782","3":"0.74281","4":"0.72154"},{"1":"-2.87949","2":"-0.75512","3":"-0.64411","4":"-0.56986"},{"1":"3.92590","2":"-0.37407","3":"-0.13787","4":"-0.21770"},{"1":"4.35084","2":"1.40353","3":"1.14085","4":"1.37147"},{"1":"1.57922","2":"1.64194","3":"1.29229","4":"1.40269"},{"1":"3.95689","2":"-0.31304","3":"-0.07980","4":"-0.21455"},{"1":"1.09275","2":"1.28525","3":"1.22441","4":"1.20428"},{"1":"-0.62389","2":"-1.51938","3":"-1.27565","4":"-1.36598"},{"1":"-0.63654","2":"-0.38224","3":"-0.05353","4":"-0.35560"},{"1":"-2.02659","2":"-0.19186","3":"-0.42605","4":"-0.53718"},{"1":"-1.46692","2":"1.27649","3":"0.81427","4":"0.91967"},{"1":"3.15078","2":"0.52310","3":"0.30720","4":"0.47231"},{"1":"-2.18938","2":"-1.59810","3":"-1.01572","4":"-1.48315"},{"1":"1.91715","2":"0.77914","3":"0.87771","4":"0.76496"},{"1":"-2.71428","2":"-1.04745","3":"-0.77536","4":"-0.91397"},{"1":"-6.59852","2":"-1.63217","3":"-1.47709","4":"-1.71347"},{"1":"0.65101","2":"0.44328","3":"0.60956","4":"0.32833"},{"1":"-0.13772","2":"-0.24972","3":"0.07876","4":"-0.17216"},{"1":"-2.43959","2":"-0.33480","3":"-0.39314","4":"-0.37198"},{"1":"-3.27802","2":"-0.20680","3":"-0.13936","4":"0.05626"},{"1":"-2.48058","2":"-1.99375","3":"-1.69587","4":"-1.87838"},{"1":"1.88639","2":"0.66475","3":"0.79670","4":"0.69865"},{"1":"5.06459","2":"-0.27977","3":"0.10817","4":"-0.26450"},{"1":"1.96335","2":"-0.43990","3":"-0.66022","4":"-0.58490"},{"1":"0.26274","2":"-0.05334","3":"-0.02396","4":"-0.16795"},{"1":"-2.94593","2":"-2.06699","3":"-1.31832","4":"-1.72082"},{"1":"-1.38628","2":"-1.02560","3":"-1.15858","4":"-1.19420"},{"1":"-0.20797","2":"0.45847","3":"0.21555","4":"0.31347"},{"1":"-1.07820","2":"0.93979","3":"0.63454","4":"0.69907"},{"1":"-1.66386","2":"-0.93238","3":"-0.95216","4":"-1.02725"},{"1":"0.58117","2":"-0.35988","3":"-0.30693","4":"-0.46232"},{"1":"1.37447","2":"-0.00518","3":"0.35985","4":"0.02485"},{"1":"-2.82687","2":"-0.18892","3":"-0.07959","4":"0.01704"},{"1":"3.86363","2":"0.87271","3":"0.47644","4":"0.57036"},{"1":"-2.64141","2":"-2.06993","3":"-1.82915","4":"-2.16738"},{"1":"0.05387","2":"0.32143","3":"-0.25961","4":"0.21632"},{"1":"0.50763","2":"-1.42382","3":"-0.77620","4":"-1.07473"},{"1":"0.64347","2":"-0.07852","3":"-0.21347","4":"-0.11750"},{"1":"2.49414","2":"-0.14925","3":"-0.03192","4":"-0.36598"},{"1":"0.61955","2":"0.52666","3":"0.79149","4":"0.71369"},{"1":"0.61745","2":"-1.49102","3":"-1.02073","4":"-1.38103"},{"1":"-1.00743","2":"-0.94757","3":"-1.28991","4":"-1.24799"},{"1":"-0.37469","2":"0.24550","3":"0.83794","4":"0.59596"},{"1":"-2.52824","2":"-0.41630","3":"-0.60312","4":"-0.34951"},{"1":"0.02372","2":"1.38143","3":"1.54542","4":"1.59429"},{"1":"2.51077","2":"1.03806","3":"0.91637","4":"0.97602"},{"1":"-4.22716","2":"-0.88639","3":"-0.47652","4":"-0.77693"},{"1":"1.96847","2":"1.08655","3":"0.65700","4":"0.89401"},{"1":"1.25668","2":"-1.95142","3":"-1.94199","4":"-1.89645"},{"1":"-0.16848","2":"2.83384","3":"2.47398","4":"2.79222"},{"1":"-0.34158","2":"1.86753","3":"1.55229","4":"1.80057"},{"1":"-2.23973","2":"-1.11172","3":"-0.69732","4":"-0.80197"},{"1":"3.62654","2":"1.41958","3":"1.11481","4":"1.24558"},{"1":"0.97034","2":"0.53940","3":"0.16182","4":"0.33477"},{"1":"3.16093","2":"0.22491","3":"0.74800","4":"0.66182"},{"1":"-1.90801","2":"1.48244","3":"1.47079","4":"1.54283"},{"1":"0.64598","2":"2.05425","3":"1.80369","4":"1.90066"},{"1":"-1.75915","2":"1.24058","3":"0.64484","4":"0.87372"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="references" class="level3">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Chatterjee:2012" class="csl-entry" role="listitem">
+Chatterjee, S., &amp; Hadi, A. S. (2012). <em>Regression analysis by example</em>. New York: Wiley.
+</div>
+<div id="ref-Coleman:1966" class="csl-entry" role="listitem">
+Coleman, J. S., Cambell, E. Q., Hobson, C. J., McPartland, J., Mood, A. M., Weinfield, F. D., &amp; York, R. L. (1966). <em>Equality of educational opportunity</em>. Washington, DC: U.S. Government Printing Office.
+</div>
+<div id="ref-Mosteller:1972" class="csl-entry" role="listitem">
+Mosteller, F., &amp; Moynihan, D. F. (1972). <em>On equality of educational opportunity</em>. New York: Random House.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

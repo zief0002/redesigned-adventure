@@ -1,0 +1,18 @@
+{
+  "hash": "814a215fd09ee583fd857f91497893a8",
+  "result": {
+    "markdown": "---\ntitle: \"mpls-violent-crimes.csv\"\nformat:\n  html:\n    theme: \n      - lumen\n    css: [\"../assets/codebooks.css\"]\n    code-copy: true\n    code-fold: true\n    highlight-style: zenburn\n    df-print: paged\n    linkcolor: '#ff851b'\ndate: \"08-02-2023\"\nbibliography: '../assets/data.bib'\ncsl: '../assets/apa-single-spaced.csl'\n---\n\n::: {.cell}\n\n:::\n\n\n---\n\n\nThe [mpls-violent-crime.csv](https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/mpls-violent-crime.csv) file contains data collected from the Minneapolis Police Department and reported by the [Star Tribune](http://www.startribune.com/a-deeper-look-at-minneapolis-crime-rates/493163741/) on  The two attributes in this file are:\n\n- `year`: Year\n- `crime_rate`: Violent crime rate per 100,000 people\n\n\n<br />\n\n\n### Preview\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Import data\ncrime = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/redesigned-adventure/main/data/mpls-violent-crime.csv\")\n\n# View data\ncrime\n```\n\n::: {.cell-output-display}\n`````{=html}\n<div data-pagedtable=\"false\">\n  <script data-pagedtable-source type=\"application/json\">\n{\"columns\":[{\"label\":[\"year\"],\"name\":[1],\"type\":[\"dbl\"],\"align\":[\"right\"]},{\"label\":[\"crime_rate\"],\"name\":[2],\"type\":[\"dbl\"],\"align\":[\"right\"]}],\"data\":[{\"1\":\"2000\",\"2\":\"1174\"},{\"1\":\"2001\",\"2\":\"1082\"},{\"1\":\"2002\",\"2\":\"1098\"},{\"1\":\"2003\",\"2\":\"1202\"},{\"1\":\"2004\",\"2\":\"1262\"},{\"1\":\"2005\",\"2\":\"1437\"},{\"1\":\"2006\",\"2\":\"1672\"},{\"1\":\"2007\",\"2\":\"1459\"},{\"1\":\"2008\",\"2\":\"1253\"},{\"1\":\"2009\",\"2\":\"1117\"},{\"1\":\"2010\",\"2\":\"1063\"},{\"1\":\"2011\",\"2\":\"946\"},{\"1\":\"2012\",\"2\":\"1036\"},{\"1\":\"2013\",\"2\":\"1021\"},{\"1\":\"2014\",\"2\":\"1008\"},{\"1\":\"2015\",\"2\":\"1085\"},{\"1\":\"2016\",\"2\":\"1105\"},{\"1\":\"2017\",\"2\":\"1078\"}],\"options\":{\"columns\":{\"min\":{},\"max\":[10]},\"rows\":{\"min\":[10],\"max\":[10]},\"pages\":{}}}\n  </script>\n</div>\n`````\n:::\n:::\n\n\n\n<!-- ### References -->\n\n<!-- <p style=\"padding-left: 50px; text-indent: -50px;\"> -->\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../site_libs/pagedtable/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../site_libs/pagedtable/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
