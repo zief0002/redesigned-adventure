@@ -23,7 +23,7 @@ head(eeo)
 ### Source the residual_plots() function from the script file
 ##################################################
 
-source("../../scripts/residual_plots.R")
+source("scripts/residual_plots.R")
 
 
 

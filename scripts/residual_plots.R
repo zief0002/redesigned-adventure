@@ -1,3 +1,7 @@
+# --------------------------------------------------
+# Residual Plots Function
+# --------------------------------------------------
+
 residual_plots = function(object){
   # Get residuals and fitted values
   aug_lm = broom::augment(object)
@@ -15,7 +19,7 @@ residual_plots = function(object){
     geom_hline(yintercept = 0, linetype = "dashed") +
     geom_smooth(method = "lm", se = TRUE) +
     geom_point() +
-    geom_smooth(method = "loess", se = TRUE) +
+    geom_smooth(method = "loess", se = FALSE) +
     theme_light() +
     xlab("Fitted values") +
     ylab("Residuals")

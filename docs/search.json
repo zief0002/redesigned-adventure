@@ -374,8 +374,8 @@
     "objectID": "notes/03-02-path-analysis.html#what-are-path-diagrams",
     "href": "notes/03-02-path-analysis.html#what-are-path-diagrams",
     "title": "🎶 Path Analysis",
-    "section": "What are Path Diagrams?",
-    "text": "What are Path Diagrams?\nPath diagrams are visual depictions of the hypothesized relationships between a set of variables. In this set of notes, we will introduce some of the ideas and concepts related to path diagrams, and the estimation of effects depicted in a path diagram (i.e., path analysis).\n\n[R Script File]"
+    "section": "",
+    "text": "Path diagrams are visual depictions of the hypothesized relationships between a set of variables. In this set of notes, we will introduce some of the ideas and concepts related to path diagrams, and the estimation of effects depicted in a path diagram (i.e., path analysis).\n\n[R Script File]"
   },
   {
     "objectID": "notes/03-02-path-analysis.html#example",
@@ -578,7 +578,7 @@
     "href": "notes/03-02-path-analysis.html#a-little-more-about-cause",
     "title": "🎶 Path Analysis",
     "section": "A Little More About Cause",
-    "text": "A Little More About Cause\nWhat do we mean when we say “X causes Y”? Contrary to popular belief, we do not mean that changing X has a direct, and immediate change on Y. For example, it is now well known that smoking causes lung cancer.\n\nBut, not everyone who smokes ends up getting lung cancer."
+    "text": "A Little More About Cause\nWhat do we mean when we say “X causes Y”? Contrary to popular belief, we do not mean that changing X has a direct, and immediate change on Y. For example, it is now well known that smoking causes lung cancer.\n\n\n\n\n\n\n\n\n\nBut, not everyone who smokes ends up getting lung cancer."
   },
   {
     "objectID": "notes/03-02-path-analysis.html#a-little-more-about-cause-cntd.",
@@ -599,7 +599,7 @@
     "href": "notes/03-02-path-analysis.html#including-time-precedence-in-the-path-diagram",
     "title": "🎶 Path Analysis",
     "section": "Including Time Precedence in the Path Diagram",
-    "text": "Including Time Precedence in the Path Diagram\nTime precedence is often reflected in the orientation of the model. Variables that occur earlier in time are oriented further to the left side of the diagram than variables that occur later.\n\n\n\n\n\n\n\n\n\nIn the smoking example, to be considered the cause for lung cancer, smoking has to occur prior to the onset of lung cancer.1\nNote that the top–bottom orientation typically doesn’t mean anything—it is just used for aesthetics in the layout."
+    "text": "Including Time Precedence in the Path Diagram\nTime precedence is often reflected in the orientation of the model. Variables that occur earlier in time are oriented further to the left side of the diagram than variables that occur later.\n\n\n\n\n\n\n\n\n\nIn the smoking example, to be considered the cause for lung cancer, smoking has to occur prior to the onset of lung cancer.1"
   },
   {
     "objectID": "notes/03-02-path-analysis.html#including-time-precedence-in-the-path-diagram-cntd.",
@@ -613,14 +613,14 @@
     "href": "notes/03-02-path-analysis.html#common-cause",
     "title": "🎶 Path Analysis",
     "section": "Common Cause",
-    "text": "Common Cause\nA common cause is a variable that is a cause of both X and Y which accounts for the relationship between X and Y. Consider the following example where we want to look at the causal impact of participation in Head Start programs on academic achievement.\n\nIn practice, the path coefficient tends to be negative. That is Head Start participants tend to have lower academic achievement than their non-Head Start peers."
+    "text": "Common Cause\nA common cause is a variable that is a cause of both X and Y which accounts for the relationship between X and Y. Consider the following example where we want to look at the causal impact of participation in Head Start programs on academic achievement.\n\n\n\n\n\n\n\n\n\nIn practice, the path coefficient tends to be negative. That is Head Start participants tend to have lower academic achievement than their non-Head Start peers."
   },
   {
     "objectID": "notes/03-02-path-analysis.html#common-cause-cntd.",
     "href": "notes/03-02-path-analysis.html#common-cause-cntd.",
     "title": "🎶 Path Analysis",
     "section": "Common Cause (cntd.)",
-    "text": "Common Cause (cntd.)\nA common cause of both Head Start participation and academic achievement is poverty. This is shown below.\n\nOnce we include poverty as a common cause, the path coefficient between Head Start participation and academic achievement switches direction. That is, after including poverty in the path model, Head Start participants tend to have higher academic achievement than their non-Head Start peers. This is akin to how effects in a regression model might change after we control for other predictors."
+    "text": "Common Cause (cntd.)\nA common cause of both Head Start participation and academic achievement is poverty. This is shown below.\n\n\n\n\n\n\n\n\n\nOnce we include poverty as a common cause, the path coefficient between Head Start participation and academic achievement switches direction. That is, after including poverty in the path model, Head Start participants tend to have higher academic achievement than their non-Head Start peers. This is akin to how effects in a regression model might change after we control for other predictors."
   },
   {
     "objectID": "notes/03-02-path-analysis.html#common-cause-cntd.-1",
@@ -1195,5 +1195,19 @@
     "title": "💪 Introduction to Matrix Algebra",
     "section": "",
     "text": "Directions\nComplete the problems on this worksheet with your small group. You may want to refer to the Matrix Algebra for Educational Scientists text.\nYou will likely be learning (or re-encountering) many new mathematical terms. It is a good idea to note and define all the vocabulary/terms that you encounter as you work through this worksheet. You may want to do this individually or create a shared document that you can all contribute to.\n\n\n\nProblems\nConsider the following matrices:\n\\[\n\\mathbf{A} = \\begin{bmatrix}3 & -2\\\\5 & 1\\end{bmatrix} \\quad \\mathbf{B} = \\begin{bmatrix}3 & -1\\\\-1 & 2\\end{bmatrix}\\quad \\mathbf{C} = \\begin{bmatrix}1 & 2 & 3\\\\0 & 1 & 2\\end{bmatrix}\n\\]\nMake sure everyone in your group can solve each of these problem by hand and using R.\n\nWhat are the dimensions of A? C?\nIs C a square matrix? Explain.\nFind the trace of A.\nFind the determinant of A.\nAdd A and B\nFind the transpose of C.\nBy referring to the dimensions, can you compute AC? How about CA?\nCompute AC.\nCompute BI\nCreate a \\(3\\times3\\) diagonal matrix whose trace is 10.\nHow do you know that B has an inverse? Explain.\nCompute \\(\\mathbf{B}^{-1}\\)\nCreate a \\(3\\times3\\) matrix that has rank 2. Verify this using R.\nCreate a \\(3\\times3\\) matrix that is symmetric and is not I.\nSolve the system of linear equations using algebra (e.g., substitution, elimination) and then solve them using matrix methods (with R). To do this you will need to read the Systems of Equations chapter in Matrix Algebra for Educational Scientists.\n\n\\[\n\\begin{split}\nx + y + z &= 2 \\\\\n6x - 4y + 5z &= 31 \\\\\n5x + 2y + 2z &= 13\n\\end{split}\n\\]"
+  },
+  {
+    "objectID": "notes/03-02-path-analysis.html",
+    "href": "notes/03-02-path-analysis.html",
+    "title": "🎶 Path Analysis",
+    "section": "",
+    "text": "Path diagrams are visual depictions of the hypothesized relationships between a set of variables. In this set of notes, we will introduce some of the ideas and concepts related to path diagrams, and the estimation of effects depicted in a path diagram (i.e., path analysis).\n\n[R Script File]"
+  },
+  {
+    "objectID": "notes/03-02-path-analysis.html#footnotes",
+    "href": "notes/03-02-path-analysis.html#footnotes",
+    "title": "🎶 Path Analysis",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNote that the top–bottom orientation typically doesn’t mean anything—it is just used for aesthetics in the layout.↩︎"
   }
 ]
