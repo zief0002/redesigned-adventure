@@ -72,15 +72,15 @@ Below are the due dates for the assignments, as well as links to each assignment
 
 <tr>
 <td>Assignment 07: *Ridge Regression*</td>
-<td>Nov. 30</td>
+<td>Dec. 07</td>
 <td align="center" style="vertical-align:middle;">
   <a class = "my-link" href="assignments/assignment-07.html"><span class="fas fa-link"></span></a>
 </td>
 </tr>
 
 <tr>
-<td>Assignment 08: *Cross-Validation*</td>
-<td>Dec. 15</td>
+<td>~~Assignment 08: *Cross-Validation*~~</td>
+<td>~~Dec. 15~~</td>
 <td align="center" style="vertical-align:middle;">
   <a class = "my-link" href="assignments/assignment-08.html"><span class="fas fa-link"></span></a>
 </td>
